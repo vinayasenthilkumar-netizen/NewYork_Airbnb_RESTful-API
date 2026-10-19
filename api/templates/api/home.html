@@ -1,0 +1,82 @@
+<!-- Main home page to view swagger , admin and more  -->
+<h3>Browse Airbnb Listings</h3>
+<li><a href="/api/docs/">Swagger API Documentation</a></li>
+
+<!-- rest api endpoints  for GET POST PUT DELETE and 2 extra filtering enpoints details   -->
+<h3>REST API Endpoints</h3>
+<ul>
+    <li>
+        <strong>GET</strong> http://127.0.0.1:8000/api/listings/ - return a paginated list of all Airbnb listings<br>
+        <a href="/api/listings/">http://127.0.0.1:8000/api/listings/</a>
+    </li>
+    <br>
+
+    <li>
+        <strong>POST</strong> http://127.0.0.1:8000/api/listings/ - create a new Airbnb listing <br>
+        <a href="/api/listings/">http://127.0.0.1:8000/api/listings/</a>
+    </li>
+    <br>
+
+    <li>
+        <strong>PUT</strong> http://127.0.0.1:8000/api/listings/&lt;id&gt;/ - fully update an existing listing <br>
+        <a href="/api/listings/1/">http://127.0.0.1:8000/api/listings/1/</a>
+    </li>
+    <br>
+
+    <li>
+        <strong>DELETE</strong> http://127.0.0.1:8000/api/listings/&lt;id&gt;/ - delete an existing listing <br>
+        <a href="/api/listings/1/">http://127.0.0.1:8000/api/listings/1/</a>
+    </li>
+    <br>
+
+    <li>
+        <strong>GET</strong> http://127.0.0.1:8000/api/listings/borough/&lt;borough&gt;/ - filter listings by borough <br>
+        Example: <a href="/api/listings/borough/Manhattan/">http://127.0.0.1:8000/api/listings/borough/Manhattan/</a>
+    </li>
+    <br>
+
+    <li>
+        <strong>GET</strong> http://127.0.0.1:8000/api/listings/under-price/&lt;price&gt;/ - filter listings priced under a particular value<br>
+        Example: <a href="/api/listings/under-price/100/">http://127.0.0.1:8000/api/listings/under-price/100/</a>
+    </li>
+</ul>
+<!-- system information -->
+<h3>System Information</h3>
+<ul>
+    <li><strong>Python Version:</strong> 3.x</li>
+    <li><strong>Django Version:</strong> 6.0</li>
+    <li><strong>Database:</strong> SQLite3</li>
+</ul>
+<!-- all the packages from the folder ( may include pacakges that i didnt download ) -->
+<h3>Installed Packages</h3>
+<pre>
+    asgiref==3.11.0
+    attrs==25.4.0
+    Django==6.0
+    django-bootstrap5==25.3
+    djangorestframework==3.16.1
+    drf-spectacular==0.29.0
+    factory_boy==3.3.3
+    Faker==39.0.0
+    inflection==0.5.1
+    jsonschema==4.25.1
+    jsonschema-specifications==2025.9.1
+    numpy==2.3.5
+    pandas==2.3.3
+    python-dateutil==2.9.0.post0
+    pytz==2025.2
+    PyYAML==6.0.3
+    referencing==0.37.0
+    rpds-py==0.30.0
+    six==1.17.0
+    sqlparse==0.5.5
+    tzdata==2025.3
+    uritemplate==4.2.0
+</pre>
+<h3>Admin Site</h3>
+<ul>
+    <li><a href="/admin/">Django Admin</a></li>
+    <li><strong>Username:</strong> admin123</li>
+    <li><strong>Password:</strong> admin123</li>
+</ul>
+
